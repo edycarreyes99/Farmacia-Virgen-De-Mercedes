@@ -21,6 +21,10 @@ import {NgBootstrapModule} from './modulos/ng-bootstrap/ng-bootstrap.module';
 // importacion del modulo de routing
 import {AppRoutingModule} from './app-routing.module';
 
+// importacion de los servicios
+import {ServicioService} from './servicios/servicio.service';
+
+
 // importacion de componentes
 import {AppComponent} from './app.component';
 import {LoginComponent} from './pages/login/login.component';
@@ -48,7 +52,10 @@ import {LoginComponent} from './pages/login/login.component';
     // modulo de ng-bootstrap
     NgBootstrapModule
   ],
-  providers: [],
+  // se injectan los proveedores de codigo para otros componentes en el apartado "providers"
+  providers: [
+    ServicioService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {
