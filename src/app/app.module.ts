@@ -18,13 +18,18 @@ import {MaterialModule} from './modulos/material/material.module';
 // importacion del modulo de ng-bootstrap
 import {NgBootstrapModule} from './modulos/ng-bootstrap/ng-bootstrap.module';
 
-
+// importacion del modulo de routing
 import {AppRoutingModule} from './app-routing.module';
+
+// importacion de componentes
 import {AppComponent} from './app.component';
+import {LoginComponent} from './pages/login/login.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    // importacion de componentes
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
