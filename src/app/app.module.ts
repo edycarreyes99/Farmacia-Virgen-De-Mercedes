@@ -29,13 +29,15 @@ import {ServicioService} from './servicios/servicio.service';
 import {AppComponent} from './app.component';
 import {LoginComponent} from './pages/login/login.component';
 import { NavsideComponent } from './componentes/navside/navside.component';
+import { EstadisticasComponent } from './pages/estadisticas/estadisticas.component';
 
 @NgModule({
   declarations: [
     // importacion de componentes
     AppComponent,
     LoginComponent,
-    NavsideComponent
+    NavsideComponent,
+    EstadisticasComponent
   ],
   imports: [
     BrowserModule,
