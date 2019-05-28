@@ -28,12 +28,14 @@ import {ServicioService} from './servicios/servicio.service';
 // importacion de componentes
 import {AppComponent} from './app.component';
 import {LoginComponent} from './pages/login/login.component';
+import { NavsideComponent } from './componentes/navside/navside.component';
 
 @NgModule({
   declarations: [
     // importacion de componentes
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    NavsideComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ import {LoginComponent} from './pages/login/login.component';
   ],
   // se injectan los proveedores de codigo para otros componentes en el apartado "providers"
   providers: [
-    ServicioService
+    ServicioService,
+    NavsideComponent
   ],
   bootstrap: [AppComponent]
 })
