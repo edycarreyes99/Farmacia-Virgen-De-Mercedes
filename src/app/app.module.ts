@@ -1,5 +1,7 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {FormsModule} from '@angular/forms';
+
 
 import {NgModule} from '@angular/core';
 
@@ -28,8 +30,8 @@ import {ServicioService} from './servicios/servicio.service';
 // importacion de componentes
 import {AppComponent} from './app.component';
 import {LoginComponent} from './pages/login/login.component';
-import { NavsideComponent } from './componentes/navside/navside.component';
-import { EstadisticasComponent } from './pages/estadisticas/estadisticas.component';
+import {NavsideComponent} from './componentes/navside/navside.component';
+import {EstadisticasComponent} from './pages/estadisticas/estadisticas.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,7 @@ import { EstadisticasComponent } from './pages/estadisticas/estadisticas.compone
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
 
