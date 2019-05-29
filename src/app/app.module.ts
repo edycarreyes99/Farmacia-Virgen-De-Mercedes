@@ -32,6 +32,7 @@ import {AppComponent} from './app.component';
 import {LoginComponent} from './pages/login/login.component';
 import {NavsideComponent} from './componentes/navside/navside.component';
 import {EstadisticasComponent} from './pages/estadisticas/estadisticas.component';
+import { NavbarComponent } from './componentes/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {EstadisticasComponent} from './pages/estadisticas/estadisticas.component
     AppComponent,
     LoginComponent,
     NavsideComponent,
-    EstadisticasComponent
+    EstadisticasComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +64,8 @@ import {EstadisticasComponent} from './pages/estadisticas/estadisticas.component
   // se injectan los proveedores de codigo para otros componentes en el apartado "providers"
   providers: [
     ServicioService,
-    NavsideComponent
+    NavsideComponent,
+    NavbarComponent
   ],
   bootstrap: [AppComponent]
 })
