@@ -33,6 +33,7 @@ import {LoginComponent} from './pages/login/login.component';
 import {NavsideComponent} from './componentes/navside/navside.component';
 import {EstadisticasComponent} from './pages/estadisticas/estadisticas.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { InventarioComponent } from './pages/inventario/inventario.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
     LoginComponent,
     NavsideComponent,
     EstadisticasComponent,
-    NavbarComponent
+    NavbarComponent,
+    InventarioComponent
   ],
   imports: [
     BrowserModule,
