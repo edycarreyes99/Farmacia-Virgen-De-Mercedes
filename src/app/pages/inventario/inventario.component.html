@@ -4,8 +4,17 @@
     <mat-card-title>
       <div class="row">
         <div class="col-sm-10 col-md-10 col-lg-10">
-          <mat-form-field>
-            <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar">
+          <mat-form-field style="max-width: 15rem;">
+            <input matInput type="text" (keyup)="applyFilter($event.target.value)" placeholder="Buscar"
+                   [(ngModel)]="valorBusqueda">
+            <button mat-button *ngIf="valorBusqueda" matSuffix mat-icon-button aria-label="Borrar"
+                    (click)="applyFilter(''); valorBusqueda=''">
+              <mat-icon>close</mat-icon>
+            </button>
+            <button mat-button *ngIf="!valorBusqueda" matSuffix mat-icon-button aria-label="Buscar"
+                    (click)="null">
+              <mat-icon>search</mat-icon>
+            </button>
           </mat-form-field>
         </div>
         <div class="col-sm-2 col-md-2 col-lg-2">

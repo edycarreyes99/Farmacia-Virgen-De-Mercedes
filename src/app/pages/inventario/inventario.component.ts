@@ -10030,6 +10030,9 @@ export class InventarioComponent implements OnInit {
   // se define una variable con los elementos de cabcera de la tabla
   displayedColumns: string[] = ['Codigo', 'Nombre', 'Presentacion', 'Laboratorio', 'Sitio', 'Existencia', 'Precio', 'Vencimiento', 'Acciones'];
 
+  // se crea una variable para el buscador
+  valorBusqueda: string;
+
   // se definen variables de tipo document observable para el paginator y para el sorter
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
