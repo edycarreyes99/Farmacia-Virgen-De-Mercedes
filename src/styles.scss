@@ -9,6 +9,13 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+button{
+  border: none;
+}
+
+.cdk-focused, cdk-mouse-focused{
+  border: none;
+}
 
 ::-webkit-scrollbar {
   -webkit-appearance: none
