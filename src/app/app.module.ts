@@ -15,29 +15,29 @@ import {AngularFireStorageModule} from '@angular/fire/storage';
 import {environment} from '../environments/environment';
 
 // importacion del modulo de material design
-import {MaterialModule} from './modulos/material/material.module';
+import {MaterialModule} from './modules/material/material.module';
 
 // importacion del modulo de ng-bootstrap
-import {NgBootstrapModule} from './modulos/ng-bootstrap/ng-bootstrap.module';
+import {NgBootstrapModule} from './modules/ng-bootstrap/ng-bootstrap.module';
 
 // importacion del modulo de routing
 import {AppRoutingModule} from './app-routing.module';
 
-// importacion de los servicios
-import {ServicioService} from './servicios/servicio.service';
+// importacion de los services
+import {ServicioService} from './services/servicio.service';
 
 
-// importacion de componentes
+// importacion de components
 import {AppComponent} from './app.component';
 import {LoginComponent} from './pages/login/login.component';
-import {NavsideComponent} from './componentes/navside/navside.component';
+import {NavsideComponent} from './components/navside/navside.component';
 import {EstadisticasComponent} from './pages/estadisticas/estadisticas.component';
-import { NavbarComponent } from './componentes/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { InventarioComponent } from './pages/inventario/inventario.component';
 
 @NgModule({
   declarations: [
-    // importacion de componentes
+    // importacion de components
     AppComponent,
     LoginComponent,
     NavsideComponent,
@@ -51,7 +51,7 @@ import { InventarioComponent } from './pages/inventario/inventario.component';
     BrowserAnimationsModule,
     AppRoutingModule,
 
-    // modulos de la base de datos
+    // modules de la base de datos
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFirestoreModule.enablePersistence({synchronizeTabs: true}),
     AngularFireDatabaseModule,
@@ -63,7 +63,7 @@ import { InventarioComponent } from './pages/inventario/inventario.component';
     // modulo de ng-bootstrap
     NgBootstrapModule
   ],
-  // se injectan los proveedores de codigo para otros componentes en el apartado "providers"
+  // se injectan los proveedores de codigo para otros components en el apartado "providers"
   providers: [
     ServicioService,
     NavsideComponent,

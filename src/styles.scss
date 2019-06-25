@@ -9,11 +9,12 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-button{
+
+button {
   border: none;
 }
 
-.cdk-focused, cdk-mouse-focused{
+.cdk-focused, cdk-mouse-focused {
   border: none;
 }
 
@@ -28,6 +29,10 @@ button{
 
 ::-webkit-scrollbar:horizontal {
   height: 10px
+}
+
+button:focus {
+  outline: none;
 }
 
 /*::-webkit-scrollbar-thumb {
